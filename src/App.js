@@ -8,8 +8,7 @@ function App() {
   const _contentState = ContentState.createFromText('Type here');
   const raw = convertToRaw(_contentState);  
   const [contentState, setContentState] = useState(raw); 
-
-
+  
   return (
     <div className="App">
       <header className="App-header">
