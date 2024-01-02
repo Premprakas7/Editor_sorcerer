@@ -5,8 +5,8 @@ import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import './App.css';
 
 function App() {
-  const _contentState = ContentState.createFromText('Type here');
-  const raw = convertToRaw(_contentState);  
+  const content = ContentState.createFromText('Type here');
+  const raw = convertToRaw(content);  
   const [contentState, setContentState] = useState(raw); 
   
   return (
